@@ -24,8 +24,10 @@ keymap("n", "<C-h>", "<C-w>h", opts)
 keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
-
 keymap("n", "cc", ":bd!<CR>", opts)
+
+-- Telsecope Searches
+keymap("n", "fd", ":Telescope lsp_dynamic_workspace_symbols<CR>", opts)
 
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize -2<CR>", opts)
